@@ -13,13 +13,14 @@ namespace StruggleTweaks {
         }
 
 
-        [HarmonyPatch(typeof(PlayerStruggle), "Tap")]
+        [HarmonyPatch(typeof(PlayerStruggle), "WolfTap")]
         public class StruggleTweaksTap
         {
-            public static void Postfix(PlayerStruggle __instance)
+            private static void Postfix(PlayerStruggle __instance)
             {
                 if (Settings.options.wolfBleedoutMinutes >= 0f)
                 {
+
                     __instance.m_WolfBleedoutMinutes = Settings.options.wolfBleedoutMinutes;
                 }
 
@@ -33,7 +34,7 @@ namespace StruggleTweaks {
         [HarmonyPatch(typeof(PlayerStruggle), "MakePartnerFlee")]
         public class StruggleTweaksKillOnFlee
         {
-            public static void Postfix(PlayerStruggle __instance)
+            private static void Postfix(PlayerStruggle __instance)
             {
                 if (__instance.m_PartnerBaseAi.m_AiWolf)
                 {
