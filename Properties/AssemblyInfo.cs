@@ -36,5 +36,5 @@ using MelonLoader;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: MelonModInfo(typeof(StruggleTweaks.StruggleTweaks), "StruggleTweaks", "2.0", "AlexTheRegent, ttr")]
+[assembly: MelonModInfo(typeof(StruggleTweaks.StruggleTweaks), "StruggleTweaks", "2.1", "AlexTheRegent, ttr")]
 [assembly: MelonModGame("Hinterland", "TheLongDark")]

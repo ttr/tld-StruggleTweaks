@@ -16,10 +16,10 @@ namespace StruggleTweaks
 		[Slider(0f, 100f)]
 		public float wolfBleedoutMinutes = 10f;
 
-		[Name("Struggle tap mutiplier")]
-		[Description("")]
-		[Slider(0.1f, 10f)]
-		public float tapIncrement = 1f;
+		[Name("Struggle tap value")]
+		[Description("Value of tap - not mutiplier (as was before) - higher means quicker to win struggle. Default:6")]
+		[Slider(0.1f, 30f)]
+		public float tapIncrement = 6f;
 	}
 	internal static class Settings
 	{
