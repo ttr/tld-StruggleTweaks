@@ -27,7 +27,7 @@ namespace StruggleTweaks
 		public static void OnLoad()
 		{
 			options = new StruggleTweaksSettings();
-			options.AddToModSettings("Strugle Tweaks Settings");
+			options.AddToModSettings("Struggle Tweaks Settings");
 		}
 	}
 }

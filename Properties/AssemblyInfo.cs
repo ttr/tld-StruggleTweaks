@@ -11,7 +11,7 @@ using MelonLoader;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BleedingTweaks")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -36,5 +36,5 @@ using MelonLoader;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: MelonModInfo(typeof(StruggleTweaks.StruggleTweaks), "StruggleTweaks", "2.1", "AlexTheRegent, ttr")]
+[assembly: MelonModInfo(typeof(StruggleTweaks.StruggleTweaks), "StruggleTweaks", "2.2", "AlexTheRegent, ttr")]
 [assembly: MelonModGame("Hinterland", "TheLongDark")]
