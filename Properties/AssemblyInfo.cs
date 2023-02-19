@@ -1,40 +1,14 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using MelonLoader;
+﻿using MelonLoader;
+using System.Reflection;
 
-// General Information about an assembly is controlled through the following
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("BleedingTweaks")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BleedingTweaks")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+//This is a C# comment. Comments have no impact on compilation.
 
-// Setting ComVisible to false makes the types in this assembly not visible
-// to COM components.  If you need to access a type in this assembly from
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: AssemblyTitle(StruggleTweaks.BuildInfo.ModName)]
+[assembly: AssemblyCopyright($"Created by " + StruggleTweaks.BuildInfo.ModAuthor)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("daf59c7b-b568-4a66-beca-0d8b47971845")]
+[assembly: AssemblyVersion(StruggleTweaks.BuildInfo.ModVersion)]
+[assembly: AssemblyFileVersion(StruggleTweaks.BuildInfo.ModVersion)]
+[assembly: MelonInfo(typeof(StruggleTweaks.StruggleTweaks), StruggleTweaks.BuildInfo.ModName, StruggleTweaks.BuildInfo.ModVersion, StruggleTweaks.BuildInfo.ModAuthor)]
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-
-[assembly: MelonInfo(typeof(StruggleTweaks.StruggleTweaks), "StruggleTweaks", "2.3", "AlexTheRegent, ttr")]
+//This tells MelonLoader that the mod is only for The Long Dark.
 [assembly: MelonGame("Hinterland", "TheLongDark")]

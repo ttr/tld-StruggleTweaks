@@ -1,15 +1,22 @@
 ﻿using MelonLoader;
-using Harmony;
-using UnityEngine;
+using HarmonyLib;
+using Il2Cpp;
 
 namespace StruggleTweaks {
+    public static class BuildInfo
+    {
+        internal const string ModName = "StruggleTweaks";
+        internal const string ModAuthor = "AlexTheRegent, ttr";
+        internal const string ModVersion = "2.4.0";
+
+    }
     internal class StruggleTweaks : MelonMod
     {
 
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
-            Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
             Settings.OnLoad();
+            LoggerInstance.Msg($"[{BuildInfo.ModName}] Version {BuildInfo.ModVersion} loaded!");
         }
 
 
